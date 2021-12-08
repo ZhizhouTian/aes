@@ -315,7 +315,7 @@ int aes_set_key(aes_context *ctx, const uint8_t *key, uint32_t key_bit)
 		default: return PARM_ERROR;
 	}
 	ctx->rk = ctx->buf;
-	key_expansion(ctx, key);//√‹‘ø¥¶¿Ì
+	key_expansion(ctx, key);
 	return SUCCESS;
 }
 
